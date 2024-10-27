@@ -1,5 +1,5 @@
 .hero {
-    background: url('https://via.placeholder.com/1600x900') no-repeat center center;
+    background: url('../images/1600x900.png') no-repeat center center;
     background-size: cover;
     height: 100vh;
     color: rgb(0, 0, 0);
