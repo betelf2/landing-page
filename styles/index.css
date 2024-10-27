@@ -10,9 +10,9 @@
     position: relative; /* Necessário para posicionamento */
     overflow: hidden; /* Esconde o conteúdo que transborda */
     color: white;
-  }
+}
 
-  .hero::after {
+.hero::after {
     content: "";
     position: absolute;
     top: 0;
@@ -21,14 +21,14 @@
     bottom: 0;
     background-color: rgba(0, 0, 0, 0.7); /* Adiciona um overlay escuro */
     z-index: 1; /* Coloca o overlay acima da imagem */
-  }
+}
 
-  .hero .container {
+.hero .container {
     position: relative; /* Necessário para que o conteúdo fique acima do overlay */
     z-index: 2; /* Garante que o texto fique acima do overlay */
-  }
+}
 
-  .btn-hero {
+.btn-hero {
     background-color: transparent;
     color: white;
     border: 1px #ffffff !important;
@@ -36,36 +36,53 @@
     padding: 10px 20px;
     border-radius: 1px;
     border-style: solid !important;
-  }
+}
 
-  .btn-hero:hover {
+.btn-hero:hover {
     background-color: #ffffff25;
     color: white;
-  }
+}
 
-/* ---------------- HERO ----------------*/
+/* ---------------- HERO END ----------------*/
 
-  section {
+section {
     padding: 60px 0;
-  }
+}
 
-  footer {
+footer {
     background-color: #000000;
     padding: 20px 0;
     color: #ffffff;
-  }
+}
 
-  .nav-link
-  {
+.nav-link
+{
     color: #ffffff !important;
-  }
+}
 
-  .navbar
-  {
+.navbar
+{
     background-color: #000000;
-  }
+}
 
-  .navbar-toggler
-  {
-      border: none;
-  }
+.navbar-toggler
+{
+    border: none;
+}
+
+.contato-tipo
+{
+    color: black;
+}
+
+.contato
+{
+    color: rgb(255, 89, 0); 
+    text-decoration: none;
+}
+
+.contato:hover
+{
+    color: rgb(255, 89, 0);  
+    text-decoration: underline;
+}
