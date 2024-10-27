@@ -1,0 +1,31 @@
+.hero {
+    background: url('https://via.placeholder.com/1600x900') no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+    color: rgb(0, 0, 0);
+  }
+
+  .hero h1 {
+    font-size: 4rem;
+    font-weight: 700;
+  }
+
+  .hero p {
+    font-size: 1.2rem;
+  }
+
+  .btn-custom {
+    background-color: #5a67d8;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+  }
+
+  section {
+    padding: 60px 0;
+  }
+
+  footer {
+    background-color: #f8f9fa;
+    padding: 20px 0;
+  }
