@@ -16,11 +16,19 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
 
+<script>
+  window.addEventListener('scroll', function() {
+    const scrolled = window.scrollY;
+    const hero = document.querySelector('.hero');
+    hero.style.backgroundPositionY = `${scrolled * 0.5}px`; // Ajusta a velocidade do movimento
+  });
+</script>
+
 <body>
   <!-- Navigation Bar -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <nav class="navbar navbar-expand-lg navbar-dark">
     <div class="container">
-      <a class="navbar-brand" href="#">BBF2</a>
+      <a class="navbar-brand" href="#"><img src="images/logo-betel-branca.png" width="25%" alt="Feature 1"></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -67,23 +75,21 @@
           <li class="nav-item"> <a class="nav-link" href="#localizacao">Localização</a> </li>
 
           <!-- Membros -->
-          <li class="nav-item"> <a class="nav-link" href="#localizacao">Membros</a> </li>
+          <li class="nav-item"> <a class="nav-link" href="#localizacao">Para Membros</a> </li>
 
         </ul>
       </div> <!-- colapse -->
     </div> <!-- container -->
   </nav><!-- Navigation Bar -->
 
-
   <!-- Hero Section -->
   <header class="hero d-flex align-items-center" id="home">
     <div class="container text-center">
       <h1>Betel Brasileiro Funcionários II</h1>
-      <p class="lead">We provide the best solutions for your business needs.</p>
-      <a href="#features" class="btn btn-custom mt-4">Learn More</a>
+      <p class="lead">Maneja bem a palavra da verdade</p>
+      <a href="#localizacao" class="btn btn-hero mt-4">Venha nos visitar</a>
     </div>
   </header>
-
 
   <!-- Departamentos -->
   <section id="departamentos" class="py-5">
@@ -137,7 +143,7 @@
   <iframe src="carrossel.html" id="galeria" style="border:0; width:100%; height:620px;" loading="lazy"></iframe>
 
   <!-- Seção de Localização -->
-  <section id="location" class="py-5">
+  <section id="localizacao" class="py-5">
     <div class="container">
       <h2 class="text-center">Nossa Localização</h2>
       <p class="text-center">Visite-nos em nosso endereço abaixo!</p>
@@ -158,7 +164,7 @@
   </section> <!-- Seção de Localização -->
 
 	<!-- Contact Section -->
-	<section id="contato" class="py-5">
+	<section id="contato" class="py-5 bg-light">
 	  <div class="container">
 		<h2 class="text-center">Contact Us</h2>
 		<p class="text-center">Stay in touch with us through the following channels.</p>
