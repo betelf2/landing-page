@@ -1,6 +1,20 @@
 :root 
 {
-    --laranja-betel: #FCAC21; /* Define a root variable for primary color */
+    --laranja-betel: #FCAC21;
+    --laranja-betel-dark: #da941b;
+    --laranja-betel-dark2:rgb(182, 124, 23);
+}
+
+.dropdown-item
+{
+    color: black;
+    background-color: white;
+}
+
+.dropdown-item:hover
+{
+    color: black;
+    background-color: var(--laranja-betel);
 }
 
 /* ---------------- HERO ----------------*/
@@ -69,6 +83,43 @@ section {
     border: none;
 }
 
+/* ---------------- Ministérios ----------------*/
+#ministerios
+{
+    background-color: #000 !important;
+    color: #000;
+}
+
+#ministerios h2
+{
+    color: #fff;
+}
+
+.ministerios-label
+{
+    color: white;
+}
+
+.ministerios-btn
+{
+    background-color: var(--laranja-betel);
+    border: 0px;
+}
+
+.ministerios-btn:hover
+{
+    background-color: var(--laranja-betel-dark);
+    border: 0px;
+}
+
+.ministerios-btn:focus, 
+.ministerios-btn:active {
+    background-color: var(--laranja-betel-dark2) !important;
+    border: 0px;
+    outline: 2px solid var(--laranja-betel-dark2) !important;;
+}
+/* ---------------- Contato ----------------*/
+
 .contato-tipo
 {
     color: black;
@@ -85,6 +136,8 @@ section {
     color: var(--laranja-betel);
     text-decoration: underline;
 }
+
+/* ---------------- Footer ----------------*/
 
 footer 
 {
