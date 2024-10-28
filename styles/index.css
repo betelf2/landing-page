@@ -1,3 +1,8 @@
+:root 
+{
+    --laranja-betel: #FCAC21; /* Define a root variable for primary color */
+}
+
 /* ---------------- HERO ----------------*/
 .hero {
     background-image: url('../images/1600x900\ gif.gif'); /* Substitua pelo caminho da sua imagem */
@@ -77,12 +82,12 @@ footer {
 
 .contato
 {
-    color: rgb(255, 89, 0); 
+    color: var(--laranja-betel); 
     text-decoration: none;
 }
 
 .contato:hover
 {
-    color: rgb(255, 89, 0);  
+    color: var(--laranja-betel);
     text-decoration: underline;
 }
