@@ -54,12 +54,6 @@ section {
     padding: 60px 0;
 }
 
-footer {
-    background-color: #000000;
-    padding: 20px 0;
-    color: #ffffff;
-}
-
 .nav-link
 {
     color: #ffffff !important;
@@ -90,4 +84,11 @@ footer {
 {
     color: var(--laranja-betel);
     text-decoration: underline;
+}
+
+footer 
+{
+    background-color: #000000;
+    padding: 20px 0;
+    color: #ffffff;
 }
