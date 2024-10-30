@@ -41,6 +41,18 @@ const ministerios = [
     imagem: "images/comunicacao.jpg", 
     link: "#comunicacao"
 },
+{ 
+    titulo: "Interseção", 
+    descricao: "Intercedemos.", 
+    imagem: "images/comunicacao.jpg", 
+    link: "#comunicacao"
+},
+{ 
+    titulo: "Casais", 
+    descricao: "Somos casados.", 
+    imagem: "images/comunicacao.jpg", 
+    link: "#comunicacao"
+},
 ];
 
 const section = document.getElementById("ministerios-section");
