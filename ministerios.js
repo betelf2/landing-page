@@ -42,7 +42,7 @@ const ministerios = [
     link: "#comunicacao"
 },
 { 
-    titulo: "Interseção", 
+    titulo: "Intercessão", 
     descricao: "Intercedemos.", 
     imagem: "images/comunicacao.jpg", 
     link: "#comunicacao"
