@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pagina</title>
+  <link rel="stylesheet" href="./styles/bootstrap.css">
+  <link rel="stylesheet" href="./styles/index.css">
+  <script src="./scripts/load-libraries.js"></script><!-- JS do Bootstrap e dependências -->
+  <style>.disabled { display: none !important; }</style>
+</head>
+
+<body>
+  <header class="hero d-flex align-items-center" id="home">
+    <div class="container text-center">
+      <h1>DEIBB</h1>
+      <p class="lead">Departamento Infantil do Betel Brasileiro</p>
+    </div>
+  </header>
+
+  <section id="projetos" class="py-5 bg-light">
+    <div class="container">
+      <div id="projetos-section"></div><!-- Os grupos de cards serão gerados aqui pelo JavaScript -->
+    </div><!--container-->
+  </section>
+  <script src="./scripts/projetos/projetos.js"></script> <!-- Importa o script dos projetos -->
+  <script>configurarSessaoDosProjetos()</script>
+</body>
+</html>
