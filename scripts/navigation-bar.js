@@ -35,6 +35,8 @@ const navb_ministerios =
     <a class="dropdown-item" href="#ministerios">Maleah (Dança)</a>
     <a class="dropdown-item" href="#ministerios">Teatro</a>
     <a class="dropdown-item" href="#ministerios">Comunicação</a>
+    <a class="dropdown-item" href="#ministerios">Intercessão</a>
+    <a class="dropdown-item" href="#ministerios">Casais</a>
 </div>
 </li><!-- Dropdown de Ministérios -->
 `
@@ -90,6 +92,10 @@ const navigationBarStyle =
 .navbar
 {
     background-color: #000000;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    width: 100%;
 }
 
 .navbar-toggler
