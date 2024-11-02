@@ -2,24 +2,24 @@ import { getDataFromCurrentURL } from "./utils/url-handler.js";
 
 const DEPARTAMENTOS =
 { 
-    DEIBB: 'DEIBB', 
-    CONECTA_TEENS: 'ConectaTeens', 
-    ELO: 'ELO', 
-    DEHOBB: 'DEHOBB', 
-    DEMUBB: 'DEMUBB'
+    INFANTIL: 'DEIBB'.toUpperCase(), 
+    ADOLESCENTES: 'TEENS'.toUpperCase(), 
+    JOVENS: 'ELO'.toUpperCase(), 
+    HOMENS: 'DEHOBB'.toUpperCase(), 
+    MULHERES: 'DEMUBB'.toUpperCase()
 };
 
 const MINISTERIOS =
 { 
-    MISSOES: 'MISSOES', 
-    SOCIAL: 'SOCIAL', 
-    INFANTIL: 'INFANTIL', 
-    LOUVOR: 'LOUVOR', 
-    DANCA: 'DANCA', 
-    TEATRO: 'TEATRO', 
-    COMUNICACAO: 'COMUNICACAO', 
-    INTERCESSAO: 'INTERCESSAO', 
-    CASAIS: 'CASAIS'
+    MISSOES: 'MISSOES'.toUpperCase(), 
+    SOCIAL: 'SOCIAL'.toUpperCase(), 
+    INFANTIL: 'INFANTIL'.toUpperCase(), 
+    LOUVOR: 'LOUVOR'.toUpperCase(), 
+    DANCA: 'DANCA'.toUpperCase(), 
+    TEATRO: 'TEATRO'.toUpperCase(), 
+    COMUNICACAO: 'COMUNICACAO'.toUpperCase(), 
+    INTERCESSAO: 'INTERCESSAO'.toUpperCase(), 
+    CASAIS: 'CASAIS'.toUpperCase()
 };
 
 const IMAGE_ROOT = "../../images/projetos"
@@ -30,7 +30,7 @@ const projetos = [
         descricao: "Evangelização Infantil", 
         imagem: `${IMAGE_ROOT}/seara.jpg`, 
         ministerios: [MINISTERIOS.INFANTIL, MINISTERIOS.MISSOES] ,
-        departamentos: [DEPARTAMENTOS.DEIBB]
+        departamentos: [DEPARTAMENTOS.INFANTIL]
     },
     { 
         titulo: "Feira das nações", 
@@ -44,7 +44,7 @@ const projetos = [
         descricao: "Encontro das Mulheres Amadas por Deus", 
         imagem: `${IMAGE_ROOT}/emade.jpg`, 
         ministerios: [] ,
-        departamentos: [DEPARTAMENTOS.DEMUBB]
+        departamentos: [DEPARTAMENTOS.MULHERES]
     },
     { 
         titulo: "Projeto Presente", 
@@ -52,7 +52,21 @@ const projetos = [
         imagem: `${IMAGE_ROOT}/projetoPresente.jpg`, 
         ministerios: [MINISTERIOS.SOCIAL] ,
         departamentos: []
-    },   
+    },  
+    { 
+        titulo: "CrossOver", 
+        descricao: "Projeto que visa...", 
+        imagem: `${IMAGE_ROOT}/projetoPresente.jpg`, 
+        ministerios: [] ,
+        departamentos: [DEPARTAMENTOS.JOVENS]
+    },    
+    { 
+        titulo: "Celebra Teen", 
+        descricao: "Projeto que visa...", 
+        imagem: `${IMAGE_ROOT}/projetoPresente.jpg`, 
+        ministerios: [] ,
+        departamentos: [DEPARTAMENTOS.ADOLESCENTES]
+    },  
 ]
 
 function getProjetosWithData(data)

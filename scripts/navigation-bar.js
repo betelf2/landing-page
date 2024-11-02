@@ -3,7 +3,7 @@ import { loadJsonData } from './utils/json-reader.js'
 let navigationBarContainer = document.getElementById("navigation-bar");
 
 const navb_logo =  `
-<a class="navbar-brand" href="#">
+<a class="navbar-brand" href="index.html">
     <img src="images/logo-betel-branca.png" width="25%" alt="Feature 1">
 </a>`
 

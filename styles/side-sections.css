@@ -1,0 +1,33 @@
+body
+{
+    background-color: #000;
+}
+
+.hero {
+    background-image: url('../images/1600x900\ gif.gif'); /* Substitua pelo caminho da sua imagem */
+    background-size: cover; /* A imagem cobre toda a área */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Impede a repetição */
+    background-attachment: fixed; /* Paralaxe fixa */
+    background-color: #000; /* Cor de fundo caso a imagem não carregue */
+    height: 80vh; /* Altura da janela */
+    position: relative; /* Necessário para posicionamento */
+    overflow: hidden; /* Esconde o conteúdo que transborda */
+    color: white;
+}
+
+.hero::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7); /* Adiciona um overlay escuro */
+    z-index: 1; /* Coloca o overlay acima da imagem */
+}
+
+.hero .container {
+    position: relative; /* Necessário para que o conteúdo fique acima do overlay */
+    z-index: 2; /* Garante que o texto fique acima do overlay */
+}

@@ -3,13 +3,13 @@
         "titulo": "DEIBB", 
         "descricao": "Departamento Infantil", 
         "imagem": "images/missoes.jpg", 
-        "link": "infantil"
+        "link": "deibb"
     },
     { 
         "titulo": "Conecta Teens", 
         "descricao": "Departamento dos Adolescentes", 
         "imagem": "images/social.jpg", 
-        "link": "conecta-teens"
+        "link": "teens"
     },
     { 
         "titulo": "Elo", 
