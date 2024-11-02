@@ -1,26 +1,26 @@
 let navigationBarContainer = document.getElementById("navigation-bar");
 
-const logo =  `
+const navb_logo =  `
 <a class="navbar-brand" href="#">
     <img src="images/logo-betel-branca.png" width="25%" alt="Feature 1">
 </a>`
 
-const toggler = `
+const navb_toggler = `
 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
 </button>`
 
-const historiaDaIgreja = 
+const navb_historiaDaIgreja = 
 `<!-- História da Igreja -->
 <li class="nav-item"> <a class="nav-link" href="#historia">História da Igreja</a> </li>`
 
-const galeriaDeFotos = 
+const navb_galeriaDeFotos = 
 `
 <!-- Galeria de Fotos -->
 <li class="nav-item"> <a class="nav-link" href="#galeria">Galeria de Fotos</a> </li>
 `
 
-const ministerios = 
+const navb_ministerios = 
 `
 <!-- Dropdown de Ministérios -->
 <li class="nav-item dropdown">
@@ -39,7 +39,7 @@ const ministerios =
 </li><!-- Dropdown de Ministérios -->
 `
 
-const departamentos = 
+const navb_departamentos = 
 `
 <!-- Dropdown de Departamentos -->
 <li class="nav-item dropdown">
@@ -56,13 +56,13 @@ const departamentos =
 </li><!-- Dropdown de Departamentos -->
 `
 
-const localizacao = 
+const navb_localizacao = 
 `
 <!-- Localização -->
 <li class="nav-item"> <a class="nav-link" href="#localizacao">Localização</a> </li>
 `
 
-const membros = 
+const navb_membros = 
 `
 <!-- Membros -->
 <li class="nav-item"> <a class="nav-link" href="#localizacao">Para Membros</a> </li>
@@ -103,16 +103,16 @@ const navigationBarData = `
     <nav class="navbar navbar-expand-lg navbar-dark">
         <style>${navigationBarStyle}</style>
         <div class="container">
-            ${logo}\n
-            ${toggler}\n
+            ${navb_logo}\n
+            ${navb_toggler}\n
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ml-auto">
-                    ${historiaDaIgreja}
-                    ${galeriaDeFotos}
-                    ${ministerios}
-                    ${departamentos}
-                    ${localizacao}
-                    ${membros}
+                    ${navb_historiaDaIgreja}
+                    ${navb_galeriaDeFotos}
+                    ${navb_ministerios}
+                    ${navb_departamentos}
+                    ${navb_localizacao}
+                    ${navb_membros}
                 </ul>
             </div> <!-- colapse -->
         </div> <!-- container -->
