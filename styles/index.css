@@ -5,18 +5,6 @@
     --laranja-betel-dark2:rgb(182, 124, 23);
 }
 
-.dropdown-item
-{
-    color: black;
-    background-color: white;
-}
-
-.dropdown-item:hover
-{
-    color: black;
-    background-color: var(--laranja-betel);
-}
-
 /* ---------------- HERO ----------------*/
 .hero {
     background-image: url('../images/1600x900\ gif.gif'); /* Substitua pelo caminho da sua imagem */
@@ -60,22 +48,6 @@
 .btn-hero:hover {
     background-color: #ffffff25;
     color: white;
-}
-
-/* ---------------- HERO END ----------------*/
-.nav-link
-{
-    color: #ffffff !important;
-}
-
-.navbar
-{
-    background-color: #000000;
-}
-
-.navbar-toggler
-{
-    border: none;
 }
 
 /* ---------------- Ministérios ----------------*/

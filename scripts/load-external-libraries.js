@@ -6,7 +6,7 @@ function loadScript(src, callback)
     document.head.appendChild(script);
 }
 
-const ROOT = "./scripts"
+const ROOT = "./scripts/external"
 
 // Bootstrap, jQuery, Popper.js
 loadScript(`${ROOT}/jquery-3.5.1.slim.min.js`, function () {
