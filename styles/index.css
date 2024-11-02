@@ -95,10 +95,18 @@
     color: white;
 }
 
+#ministerios .card
+{
+    width: 100%;
+    height: 250px !important;
+}
+
 .ministerios-btn
 {
     background-color: var(--laranja-betel);
     border: 0px;
+    position: absolute;
+    bottom: 10px;
 }
 
 .ministerios-btn:hover
