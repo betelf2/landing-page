@@ -3,54 +3,54 @@
         "titulo": "Missões", 
         "descricao": "Levando a palavra de Deus aos quatro cantos do mundo, nosso ministério de missões atua em diversas frentes.", 
         "imagem": "images/missoes.jpg", 
-        "link": "#missoes"
+        "link": "missoes"
     },
     { 
         "titulo": "Social", 
         "descricao": "Com ações voltadas para a comunidade, o ministério social trabalha para transformar vidas.", 
         "imagem": "images/social.jpg", 
-        "link": "#social"
+        "link": "social"
     },
     { 
         "titulo": "Infantil", 
         "descricao": "Nosso ministério infantil oferece um ambiente seguro e acolhedor para as crianças aprenderem sobre Deus.", 
         "imagem": "images/infantil.jpg", 
-        "link": "#infantil"
+        "link": "infantil"
     },
     { 
-        "titulo": "Louvor", 
+        "titulo": "Aviva-nos (Louvor)", 
         "descricao": "Nosso ministério de louvor busca guiar a congregação em adoração a Deus.", 
         "imagem": "images/louvor.jpg", 
-        "link": "#louvor"
+        "link": "louvor"
     },
     { 
-        "titulo": "Dança", 
+        "titulo": "Maleah (Dança)", 
         "descricao": "Expressamos nossa adoração a Deus através da dança, um ministério de celebração.", 
         "imagem": "images/danca.jpg", 
-        "link": "#danca"
+        "link": "danca"
     },
     { 
         "titulo": "Teatro", 
         "descricao": "Usamos o teatro para transmitir mensagens impactantes e inspirar a comunidade.", 
         "imagem": "images/teatro.jpg", 
-        "link": "#teatro"
+        "link": "teatro"
     },
     { 
         "titulo": "Comunicação", 
         "descricao": "Usamos o teatro para transmitir mensagens impactantes e inspirar a comunidade.", 
         "imagem": "images/comunicacao.jpg", 
-        "link": "#comunicacao"
+        "link": "comunicacao"
     },
     { 
         "titulo": "Intercessão", 
         "descricao": "Intercedemos.", 
-        "imagem": "images/comunicacao.jpg", 
-        "link": "#comunicacao"
+        "imagem": "images/intercessao.jpg", 
+        "link": "intercessao"
     },
     { 
         "titulo": "Casais", 
         "descricao": "Somos casados.", 
-        "imagem": "images/comunicacao.jpg", 
-        "link": "#comunicacao"
+        "imagem": "images/casais.jpg", 
+        "link": "casais"
     }
 ]

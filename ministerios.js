@@ -1,4 +1,4 @@
-import { loadJsonData } from './scripts/jsonReader.js'
+import { loadJsonData } from './scripts/utils/json-reader.js'
 
 async function criarMinisterios()
 {
@@ -30,7 +30,7 @@ async function criarMinisterios()
                 <div class="card-body">
                 <h5 class="card-title">${ministerio.titulo}</h5>
                 <p class="card-text">${ministerio.descricao}</p>
-                <a href="${ministerio.link}" class="btn btn-primary ministerios-btn">Saiba Mais</a>
+                <a href="side-sections.html?ministerio=${ministerio.link}" class="btn btn-primary ministerios-btn">Saiba Mais</a>
                 </div>
             </div>
             </div>

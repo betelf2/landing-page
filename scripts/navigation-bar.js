@@ -1,3 +1,5 @@
+import { loadJsonData } from './utils/json-reader.js'
+
 let navigationBarContainer = document.getElementById("navigation-bar");
 
 const navb_logo =  `
@@ -18,44 +20,6 @@ const navb_galeriaDeFotos =
 `
 <!-- Galeria de Fotos -->
 <li class="nav-item"> <a class="nav-link" href="#galeria">Galeria de Fotos</a> </li>
-`
-
-const navb_ministerios = 
-`
-<!-- Dropdown de Ministérios -->
-<li class="nav-item dropdown">
-<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    Ministérios
-</a>
-<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-    <a class="dropdown-item" href="#ministerios">Missões</a>
-    <a class="dropdown-item" href="#ministerios">Social</a>
-    <a class="dropdown-item" href="#ministerios">Infantil</a>
-    <a class="dropdown-item" href="#ministerios">Aviva-nos (Louvor)</a>
-    <a class="dropdown-item" href="#ministerios">Maleah (Dança)</a>
-    <a class="dropdown-item" href="#ministerios">Teatro</a>
-    <a class="dropdown-item" href="#ministerios">Comunicação</a>
-    <a class="dropdown-item" href="#ministerios">Intercessão</a>
-    <a class="dropdown-item" href="#ministerios">Casais</a>
-</div>
-</li><!-- Dropdown de Ministérios -->
-`
-
-const navb_departamentos = 
-`
-<!-- Dropdown de Departamentos -->
-<li class="nav-item dropdown">
-<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    Departamentos
-</a>
-<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-    <a class="dropdown-item" href="#departamentos">DEIBB (Infantil)</a>
-    <a class="dropdown-item" href="#departamentos">Conecta Teens (Adolescentes)</a>
-    <a class="dropdown-item" href="#departamentos">ELO (Jovens)</a>
-    <a class="dropdown-item" href="#departamentos">DEHOBB (Homens)</a>
-    <a class="dropdown-item" href="#departamentos">DEMUBB (Mulheres)</a>
-</div>
-</li><!-- Dropdown de Departamentos -->
 `
 
 const navb_localizacao = 
@@ -104,25 +68,65 @@ const navigationBarStyle =
 }
 `
 
-const navigationBarData = `
-    <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-lg navbar-dark">
-        <style>${navigationBarStyle}</style>
-        <div class="container">
-            ${navb_logo}\n
-            ${navb_toggler}\n
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
-                    ${navb_historiaDaIgreja}
-                    ${navb_galeriaDeFotos}
-                    ${navb_ministerios}
-                    ${navb_departamentos}
-                    ${navb_localizacao}
-                    ${navb_membros}
-                </ul>
-            </div> <!-- colapse -->
-        </div> <!-- container -->
-    </nav><!-- Navigation Bar -->
-`;
+async function createDropdown(title, options, hrefTag)
+{
+    var dataHead = `
+    <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        ${title}
+    </a>
+    <div class="dropdown-menu" aria-labelledby="navbarDropdown">`
 
-navigationBarContainer.innerHTML += navigationBarData;
+    var dataBody = ""
+
+    var dataTail = `    </div>
+                    </li>`
+
+    options.forEach((option) => {
+        dataBody += `<a class="dropdown-item" href="side-sections.html?${hrefTag}=${option.link}">${option.titulo}</a>`
+    });
+
+    return dataHead + dataBody + dataTail
+}
+
+async function createDropdownFromJson(title, jsonAddr, hrefTag)
+{
+    var options = await loadJsonData(jsonAddr)
+
+    if(options == null)
+        return null
+
+    return createDropdown(title, options, hrefTag);
+}
+
+async function createNavigationBar()
+{
+    var navb_ministerios = await createDropdownFromJson('Ministérios', "../data/ministerios.json", 'ministerio');
+    var navb_departamentos = await createDropdownFromJson('Departamentos', "../data/departamentos.json", 'departamento');
+
+    const navigationBarData = 
+    `
+        <!-- Navigation Bar -->
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <style>${navigationBarStyle}</style>
+            <div class="container">
+                ${navb_logo}\n
+                ${navb_toggler}\n
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        ${navb_historiaDaIgreja}
+                        ${navb_galeriaDeFotos}
+                        ${navb_ministerios}
+                        ${navb_departamentos}
+                        ${navb_localizacao}
+                        ${navb_membros}
+                    </ul>
+                </div> <!-- colapse -->
+            </div> <!-- container -->
+        </nav><!-- Navigation Bar -->
+    `;
+
+    navigationBarContainer.innerHTML += navigationBarData;
+}
+
+createNavigationBar();

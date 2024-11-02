@@ -1,3 +1,5 @@
+import { getDataFromCurrentURL } from "./utils/url-handler.js";
+
 const DEPARTAMENTOS =
 { 
     DEIBB: 'DEIBB', 
@@ -53,32 +55,6 @@ const projetos = [
     },   
 ]
 
-// Receuperar dados passados via url
-function getDataFromURL()
-{
-    var url = document.location.href
-
-    try 
-    {
-        var params = url.split('?')[1].split('&')
-    } 
-    catch (error) 
-    {
-        return null
-    }
-    
-    var data = {}
-    var tmp;
-
-    for(var i = 0, l = params.length; i < l; i++)
-    {
-        tmp = params[i].split('=');
-        data[tmp[0]] = tmp[1].toUpperCase()
-    }
-
-    return data;
-}
-
 function getProjetosWithData(data)
 {
     if(data == null)
@@ -110,10 +86,8 @@ function desativarSessaoDosProjetos()
 
 function configurarSessaoDosProjetos()
 {
-    var dadosDaURL = getDataFromURL();
+    var dadosDaURL = getDataFromCurrentURL();
     var projetosFiltrados = getProjetosWithData(dadosDaURL);
-
-    console.log(projetos)
 
     if(projetosFiltrados.length <= 0)
     {
@@ -153,3 +127,5 @@ function configurarSessaoDosProjetos()
         container.innerHTML += card;
     }); 
 }
+
+configurarSessaoDosProjetos();
