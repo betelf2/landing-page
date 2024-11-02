@@ -24,63 +24,8 @@
 
 <body>
   <!-- Navigation Bar -->
-  <nav class="navbar navbar-expand-lg navbar-dark">
-    <div class="container">
-      <a class="navbar-brand" href="#"><img src="images/logo-betel-branca.png" width="25%" alt="Feature 1"></a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ml-auto">
-          <!-- História da Igreja -->
-          <li class="nav-item"> <a class="nav-link" href="#historia">História da Igreja</a> </li>
-          
-          <!-- Galeria de Fotos -->
-          <li class="nav-item"> <a class="nav-link" href="#galeria">Galeria de Fotos</a> </li>
-
-          <!-- Dropdown de Ministérios -->
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Ministérios
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#ministerios">Missões</a>
-              <a class="dropdown-item" href="#ministerios">Social</a>
-              <a class="dropdown-item" href="#ministerios">Infantil</a>
-              <a class="dropdown-item" href="#ministerios">Aviva-nos (Louvor)</a>
-              <a class="dropdown-item" href="#ministerios">Maleah (Dança)</a>
-              <a class="dropdown-item" href="#ministerios">Teatro</a>
-              <a class="dropdown-item" href="#ministerios">Comunicação</a>
-              <a class="dropdown-item" href="#ministerios">Intercessão</a>
-              <a class="dropdown-item" href="#ministerios">Casais</a>
-            </div>
-          </li><!-- Dropdown de Ministérios -->
-
-          <!-- Dropdown de Departamentos -->
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Departamentos
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#departamentos">DEIBB (Infantil)</a>
-              <a class="dropdown-item" href="#departamentos">Conecta Teens (Adolescentes)</a>
-              <a class="dropdown-item" href="#departamentos">ELO (Jovens)</a>
-              <a class="dropdown-item" href="#departamentos">DEHOBB (Homens)</a>
-              <a class="dropdown-item" href="#departamentos">DEMUBB (Mulheres)</a>
-            </div>
-          </li><!-- Dropdown de Departamentos -->
-
-          <!-- Localização -->
-          <li class="nav-item"> <a class="nav-link" href="#localizacao">Localização</a> </li>
-
-          <!-- Membros -->
-          <li class="nav-item"> <a class="nav-link" href="#localizacao">Para Membros</a> </li>
-
-        </ul>
-      </div> <!-- colapse -->
-    </div> <!-- container -->
-  </nav><!-- Navigation Bar -->
+  <div id="navigation-bar"></div>
+  <script src="./scripts/navigation-bar.js"></script> <!-- Importa o script da navigation bar -->
 
   <!-- Hero Section -->
   <header class="hero d-flex align-items-center" id="home">
@@ -228,10 +173,7 @@
 </body>
 
 <!-- Footer -->
-<footer>
-  <div class="container text-center">
-    <p>Betel Brasileiro Funcionários II &copy; 2024</p>
-  </div>
-</footer>
+<div id="footer"></div>
+<script src="./scripts/footer.js"></script> <!-- Importa o script do footer -->
 
 </html>
