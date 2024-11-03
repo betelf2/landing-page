@@ -101,8 +101,8 @@ async function createDropdownFromJson(title, jsonAddr, hrefTag)
 
 async function createNavigationBar()
 {
-    var navb_ministerios = await createDropdownFromJson('Ministérios', "../data/ministerios.json", 'ministerio');
-    var navb_departamentos = await createDropdownFromJson('Departamentos', "../data/departamentos.json", 'departamento');
+    var navb_ministerios = await createDropdownFromJson('Ministérios', "data/ministerios.json", 'ministerio');
+    var navb_departamentos = await createDropdownFromJson('Departamentos', "data/departamentos.json", 'departamento');
 
     const navigationBarData = 
     `
