@@ -2,31 +2,36 @@
     { 
         "titulo": "DEIBB", 
         "descricao": "Departamento Infantil", 
-        "imagem": "images/missoes.jpg", 
-        "link": "deibb"
+        "imagem": "images/1080x1920.png", 
+        "link": "deibb",
+        "hrefKey": "DEIBB"
     },
     { 
         "titulo": "Conecta Teens", 
         "descricao": "Departamento dos Adolescentes", 
         "imagem": "images/social.jpg", 
-        "link": "teens"
+        "link": "teens",
+        "hrefKey": "TEENS"
     },
     { 
-        "titulo": "Elo", 
+        "titulo": "ELO", 
         "descricao": "Departamento dos Jovens", 
         "imagem": "images/infantil.jpg", 
-        "link": "elo"
+        "link": "elo",
+        "hrefKey": "ELO"
     },
     { 
         "titulo": "DEHOBB", 
         "descricao": "Departamento dos Homens", 
         "imagem": "images/louvor.jpg", 
-        "link": "dehobb"
+        "link": "dehobb",
+        "hrefKey": "DEHOBB"
     },
     { 
         "titulo": "DEMUBB", 
         "descricao": "Departamento das Mulheres", 
         "imagem": "images/danca.jpg", 
-        "link": "demubb"
+        "link": "demubb",
+        "hrefKey": "DEMUBB"
     }
 ]

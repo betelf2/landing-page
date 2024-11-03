@@ -1,4 +1,4 @@
-import { loadJsonData } from './scripts/utils/json-reader.js'
+import { loadJsonData } from './utils/json-reader.js'
 
 async function criarMinisterios()
 {
@@ -26,7 +26,7 @@ async function criarMinisterios()
         const cartaoDoMinisterio = `
             <div class="col-md-4 mb-4 d-flex align-items-stretch">
             <div class="card h-100 shadow-sm border-0">
-                <img src="${ministerio.imagem}" class="card-img-top" alt="${ministerio.titulo}">
+                <!--<img src="${ministerio.imagem}" class="card-img-top" alt="${ministerio.titulo}">-->
                 <div class="card-body">
                 <h5 class="card-title">${ministerio.titulo}</h5>
                 <p class="card-text">${ministerio.descricao}</p>

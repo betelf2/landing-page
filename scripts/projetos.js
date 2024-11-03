@@ -1,6 +1,6 @@
 import { getDataFromCurrentURL } from "./utils/url-handler.js";
 
-const DEPARTAMENTOS =
+export const DEPARTAMENTOS =
 { 
     INFANTIL: 'DEIBB'.toUpperCase(), 
     ADOLESCENTES: 'TEENS'.toUpperCase(), 
@@ -9,7 +9,7 @@ const DEPARTAMENTOS =
     MULHERES: 'DEMUBB'.toUpperCase()
 };
 
-const MINISTERIOS =
+export const MINISTERIOS =
 { 
     MISSOES: 'MISSOES'.toUpperCase(), 
     SOCIAL: 'SOCIAL'.toUpperCase(), 
@@ -75,16 +75,19 @@ function getProjetosWithData(data)
         return []
         
     var tmp = [];
+    var is_ministerio = false
+    var is_departamento = false
 
     projetos.forEach((projeto) => 
     {
-        if(projeto.ministerios.includes(data.ministerio))
+        if(projeto.ministerios.includes(data.ministerio) && !is_departamento)
         {
+            is_ministerio = true
             tmp.push(projeto);
         }
-        else if(projeto.departamentos.includes(data.departamento))
+        else if(projeto.departamentos.includes(data.departamento) && !is_ministerio)
         {
-            console.log(projeto.departamentos)
+            is_departamento = true
             tmp.push(projeto);
         }
     });
