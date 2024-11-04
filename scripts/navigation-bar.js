@@ -31,7 +31,7 @@ const navb_localizacao =
 const navb_membros = 
 `
 <!-- Membros -->
-<li class="nav-item"> <a class="nav-link" href="#localizacao">Para Membros</a> </li>
+<li class="nav-item"> <a class="nav-link" href="members.html">Para Membros</a> </li>
 `
 
 const navigationBarStyle =

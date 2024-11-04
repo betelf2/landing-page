@@ -5,6 +5,9 @@ async function getHeaderData(dadosDaURL)
 {
     var data = [ 'Erro', 'Ministério ou departamento não encontrado', ''  ]
 
+    if(dadosDaURL == null || dadosDaURL == undefined)
+        return data
+
     // Ministerios
     var ministerios = await loadJsonData("data/ministerios.json")
 
@@ -38,8 +41,6 @@ async function generateHeader()
 {
     var dadosDaURL = getDataFromCurrentURL();
     var headerData = await getHeaderData(dadosDaURL);
-
-    console.log(headerData)
    
     var headerContainer = document.getElementById("header");
     var headerHtml = `
