@@ -5,6 +5,16 @@
     --laranja-betel-dark2:rgb(182, 124, 23);
 }
 
+.link-clicavel
+{
+    text-decoration: none;
+}
+
+.link-clicavel:hover
+{
+    text-decoration: underline;
+}
+
 /* ---------------- HERO ----------------*/
 .hero {
     background-image: url('../images/1600x900\ gif.gif'); /* Substitua pelo caminho da sua imagem */
@@ -95,14 +105,14 @@
 }
 /* ---------------- Contato ----------------*/
 
-/*CSS filter generator to convert from black to target hex color: https://codepen.io/sosuke/pen/Pjoqqp*/
+/* CSS filter generator to convert from black to target hex color: https://codepen.io/sosuke/pen/Pjoqqp */
 
 .contato-tipo, .contato-info
 {
     color: black;
 }
 
-.contato
+/*.contato
 {
     text-decoration: none;
 }
@@ -110,7 +120,7 @@
 .contato:hover
 {
     text-decoration: underline;
-}
+}*/
 
 .icon-instagram, .icon-facebook, .icon-youtube, .icon-twitterx, .icon-mail, .icon-phone
 {
@@ -154,9 +164,75 @@
     filter: invert(28%) sepia(55%) saturate(7231%) hue-rotate(326deg) brightness(97%) contrast(103%);
 }
 
+/* ---------------- Departamentos ----------------*/
+.departamentos-primeira-linha
+{
+    padding-top: 30px;
+}
+
+.departamentos-segunda-linha
+{
+    margin-top: -15px !important;
+}
+
+.descricao-jovens
+{
+    margin-top: 39px;
+}
+
+.logo-adolescentes > img
+{
+    margin-bottom: 0px;
+}
+
+.logo-jovens img
+{
+    margin-bottom: -50px;
+}
+
+.logo-adolescentes p, .logo-jovens p, .logo-deibb p, .logo-dehobb p, .logo-demubb p
+{
+    color: #000;
+}
+
+.logo-adolescentes img, .logo-jovens img, .logo-deibb img, .logo-dehobb img, .logo-demubb img
+{
+    /* #000 */
+    filter: invert(0%) sepia(96%) saturate(0%) hue-rotate(267deg) brightness(103%) contrast(103%);
+}
+
+.logo-adolescentes:hover
+{
+    /* #6E00B4 */
+    filter: invert(19%) sepia(86%) saturate(4441%) hue-rotate(273deg) brightness(68%) contrast(123%);
+}
+
+.logo-jovens:hover
+{
+    /* #056B9D */
+    filter: invert(26%) sepia(90%) saturate(1374%) hue-rotate(175deg) brightness(93%) contrast(96%);
+}
+
+.logo-deibb:hover
+{
+    /* #ff2424 */
+    color: #ff2424;
+    filter: invert(30%) sepia(68%) saturate(5446%) hue-rotate(349deg) brightness(109%) contrast(100%);
+}
+
+.logo-dehobb:hover
+{
+    /* #ccbb00 */
+    filter: invert(13%) sepia(100%) saturate(4338%) hue-rotate(244deg) brightness(100%) contrast(121%);
+}
+
+.logo-demubb:hover
+{
+    /* #ff24cc */
+    filter: invert(46%) sepia(88%) saturate(5814%) hue-rotate(295deg) brightness(99%) contrast(109%);
+}
 
 /* ---------------- Footer ----------------*/
-
 footer 
 {
     background-color: #000000;
