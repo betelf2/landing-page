@@ -48,7 +48,28 @@ const projetos = [
     },
     { 
         titulo: "Projeto Presente", 
-        descricao: "Projeto que visa...", 
+        descricao: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.", 
+        imagem: `${IMAGE_ROOT}/projetoPresente.jpg`, 
+        ministerios: [MINISTERIOS.SOCIAL] ,
+        departamentos: []
+    },  
+    { 
+        titulo: "Projeto Presente", 
+        descricao: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.", 
+        imagem: `${IMAGE_ROOT}/projetoPresente.jpg`, 
+        ministerios: [MINISTERIOS.SOCIAL] ,
+        departamentos: []
+    },  
+    { 
+        titulo: "Projeto Presente", 
+        descricao: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.", 
+        imagem: `${IMAGE_ROOT}/projetoPresente.jpg`, 
+        ministerios: [MINISTERIOS.SOCIAL] ,
+        departamentos: []
+    },  
+    { 
+        titulo: "Projeto Presente", 
+        descricao: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. ", 
         imagem: `${IMAGE_ROOT}/projetoPresente.jpg`, 
         ministerios: [MINISTERIOS.SOCIAL] ,
         departamentos: []
@@ -129,14 +150,14 @@ function configurarSessaoDosProjetos()
         
         // Cria o HTML do card
         const card = `
-            <div class="col-md-4 mb-4 d-flex align-items-stretch">
-            <div class="card h-100 shadow-sm border-0">
-                <img src="${projeto.imagem}" class="card-img-top" alt="${projeto.titulo}">
-                <div class="card-body">
-                <h5 class="card-title">${projeto.titulo}</h5>
-                <p class="card-text">${projeto.descricao}</p>
+            <div class="col-12 mb-4 d-flex align-items-stretch">
+                <div class="card h-100 shadow-sm border-0 d-flex flex-md-row flex-column">
+                    <img src="${projeto.imagem}" class="card-img-left img-fluid" alt="${projeto.titulo}" style="width: 50%; max-width: 300px; object-fit: cover;">
+                    <div class="card-body d-flex flex-column justify-content-center">
+                        <h5 class="card-title">${projeto.titulo}</h5>
+                        <p class="card-text">${projeto.descricao}</p>
+                    </div>
                 </div>
-            </div>
             </div>
         `;
         
