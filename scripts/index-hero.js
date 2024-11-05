@@ -110,6 +110,6 @@ function generateAlternativeHero()
     enableListeners();
 }
 
-//generateMainHero()
-generateAlternativeHero()
+generateMainHero()
+//generateAlternativeHero()
 enableListeners()
