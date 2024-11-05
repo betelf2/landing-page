@@ -4,7 +4,7 @@ let navigationBarContainer = document.getElementById("navigation-bar");
 
 const navb_logo =  `
 <a class="navbar-brand" href="index.html">
-    <img src="images/logo-betel-branca.png" width="25%" alt="Feature 1">
+    <img src="images/logo-betel-branca.png" width="20%" alt="Feature 1">
 </a>`
 
 const navb_toggler = `
