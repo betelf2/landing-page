@@ -4,7 +4,7 @@ function parallaxEffect(images, factor)
     var images = document.querySelectorAll('.hero-img-overlay .hero-bg-image');
 
     window.addEventListener('scroll', () => {
-        const scrollTop = window.pageYOffset;
+        const scrollTop = window.scrollY;
         images.forEach(image => {
         image.style.transform = `translateY(${scrollTop * factor}px)`;
         });

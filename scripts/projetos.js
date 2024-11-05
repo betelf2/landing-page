@@ -22,7 +22,7 @@ export const MINISTERIOS =
     CASAIS: 'CASAIS'.toUpperCase()
 };
 
-const IMAGE_ROOT = "../../images/projetos"
+const IMAGE_ROOT = "/images/projetos"
 
 const projetos = [
     { 
@@ -49,7 +49,7 @@ const projetos = [
     { 
         titulo: "Projeto Presente", 
         descricao: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.", 
-        imagem: `${IMAGE_ROOT}/projetoPresente.jpg`, 
+        imagem: `${IMAGE_ROOT}/projetoPresente.png`, 
         ministerios: [MINISTERIOS.SOCIAL] ,
         departamentos: []
     },  
