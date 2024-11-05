@@ -1,14 +1,17 @@
 [
-    { 
-        "titulo": "Formulário para Batismo", 
-        "descricao": "Formulário para inscrição nas turmas de discipulado para o batismo.", 
-        "imagem": "", 
-        "link": "https://forms.google.com"
+    {
+        "titulo": "Atenção:",
+        "descricao": "Estão abertas as inscrições para o discipulado de batismo",
+        "link": "#"
     },
-    { 
-        "titulo": "Seja um mantenedor de missões", 
-        "descricao": "Seja um contribuinte mensal e contribua para o sorriso de alguém", 
-        "imagem": "images/1080x1920.png", 
+    {
+        "titulo": "Projeto Presente:",
+        "descricao": "Já estamos recebemos doações para o projeto presente",
         "link": ""
+    },
+    {
+        "titulo": "",
+        "descricao": "Seja um mantenedor de missões",
+        "link": "#"
     }
 ]

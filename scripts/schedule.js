@@ -6,7 +6,7 @@ var scheduleContainer = document.getElementById("horarios");
 var scheduleHead =
 `
  <link href="styles/schedule.css" rel="stylesheet">
- <section id="worship-schedule" class="py-5 bg-light">
+ <section id="worship-schedule" class="bg-light">
     <div class="container">
         <h2 class="text-center mb-4">Horários dos Cultos</h2>
         <div class="row justify-content-center">

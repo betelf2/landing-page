@@ -1,22 +1,27 @@
-#worship-schedule
+#notice-board
 {
     background: rgb(0, 0, 0) !important;
     color: rgb(0, 0, 0) !important;
-    padding-top: 70px !important;
-    padding-bottom: 80px !important;
+    padding-bottom: 95px !important;
+    margin-top: -25px !important;
 }
 
-#worship-schedule h2
+#notice-board a
+{
+    color: black !important;
+}
+
+#notice-board h2
 {
     color: rgb(255, 255, 255) !important;
 }
 
-.schedule-item
+.notice-board-item
 {
     background-color: rgb(255, 255, 255);
 }
 
-.schedule-item:hover
+.notice-board-item:hover
 {
     background-color: #FCAC21;
 }
