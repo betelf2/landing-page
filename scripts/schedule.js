@@ -1,14 +1,14 @@
 import { loadJsonData } from './utils/json-reader.js'
 
-var data = await loadJsonData("data/horarios.json");
-var scheduleContainer = document.getElementById("horarios");
+var data = await loadJsonData("data/horario.json");
+var scheduleContainer = document.getElementById("horario");
 
 var scheduleHead =
 `
  <link href="styles/schedule.css" rel="stylesheet">
  <section id="worship-schedule" class="bg-light">
     <div class="container">
-        <h2 class="text-center mb-4">Horários dos Cultos</h2>
+        <h2 class="text-center mb-4">Horário dos Cultos</h2>
         <div class="row justify-content-center">
             <div class="col-md-8">
                 <ul class="list-group">`

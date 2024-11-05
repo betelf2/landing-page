@@ -22,10 +22,22 @@ const navb_localizacao =
 <li class="nav-item"> <a class="nav-link" href="#localizacao">Localização</a> </li>
 `
 
-const navb_membros = 
+const navb_horario = 
 `
-<!-- Membros -->
-<li class="nav-item"> <a class="nav-link" href="members.html">Para Membros</a> </li>
+<!-- Horário -->
+<li class="nav-item"> <a class="nav-link" href="#horario">Horário dos Cultos</a> </li>
+`
+
+const navb_avisos = 
+`
+<!-- Horário -->
+<li class="nav-item"> <a class="nav-link" href="#avisos">Avisos</a> </li>
+`
+
+const navb_contato = 
+`
+<!-- Horário -->
+<li class="nav-item"> <a class="nav-link" href="#contatos">Contato</a> </li>
 `
 
 const navigationBarStyle =
@@ -112,7 +124,9 @@ async function createNavigationBar()
                         ${navb_ministerios}
                         ${navb_departamentos}
                         ${navb_localizacao}
-                        ${navb_membros}
+                        ${navb_horario}
+                        ${navb_avisos}
+                        ${navb_contato}
                     </ul>
                 </div> <!-- colapse -->
             </div> <!-- container -->
