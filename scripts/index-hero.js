@@ -80,7 +80,11 @@ function enableListeners()
 
 function generateMainHero()
 {
-    var images = ["images/1600x900.png", "images/1080x1920.png"]; 
+    var images = []; 
+
+    for(let i = 0; i <= 5; i++)
+        images.push(`images/hero/main/${i}.jpg`)
+
     var title = "Betel Brasileiro Funcionários II";
     var description = "Maneja bem a palavra da verdade";
     var buttonText = "Venha nos visitar";
@@ -90,5 +94,22 @@ function generateMainHero()
     enableListeners();
 }
 
+function generateAlternativeHero()
+{
+    var images = []; 
+
+    for(let i = 0; i <= 5; i++)
+        images.push(`images/hero/alternative/${i}.jpg`)
+
+    var title = "Avanço Missionário 2024";
+    var description = "Bahia da Traição";
+    var buttonText = "Faça a sua Inscrição";
+    var buttonHref = "#localizacao";
+
+    generateHTML(images, title, description, buttonText, buttonHref);
+    enableListeners();
+}
+
 generateMainHero()
+//generateAlternativeHero()
 enableListeners()
