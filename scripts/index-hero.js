@@ -104,12 +104,12 @@ function generateAlternativeHero()
     var title = "Avanço Missionário 2024";
     var description = "Bahia da Traição";
     var buttonText = "Faça a sua Inscrição";
-    var buttonHref = "#localizacao";
+    var buttonHref = "side-sections.html?ministerio=missoes";
 
     generateHTML(images, title, description, buttonText, buttonHref);
     enableListeners();
 }
 
-generateMainHero()
-//generateAlternativeHero()
+//generateMainHero()
+generateAlternativeHero()
 enableListeners()
