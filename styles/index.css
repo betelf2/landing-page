@@ -17,6 +17,35 @@
     text-decoration: underline;
 }
 
+/* ------ História ------ */
+#historia
+{
+    padding-top: 65px !important;
+    padding-bottom: 1px !important;
+    margin-bottom: -30px;
+    color: white;
+    background: #000;
+}
+
+.historia-img
+{
+    width: 200px;
+    margin-top: 40px;
+}
+
+/* ------ Logo Betel ------ */
+#logo-betel
+{
+    background-color: rgb(0, 0, 0);
+    height: 80px !important;
+}
+
+#logo-betel img
+{
+    width: 200px;
+    margin-top: -15px;
+}
+
 /* ---------------- Ministérios ----------------*/
 #ministerios
 {

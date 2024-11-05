@@ -8,7 +8,7 @@ var carouselHead =
 
 
 var carouselIndicators = `<ol class="carousel-indicators">`
-for(let i = 0; i <= 2; i++)
+for(let i = 0; i <= 9; i++)
 {
     carouselIndicators += `<li data-target="#carouselExampleIndicators" 
                            data-slide-to="${i}" 
@@ -17,7 +17,7 @@ for(let i = 0; i <= 2; i++)
 carouselIndicators += `</ol>`
 
 var carouselInner = `<div class="carousel-inner">`
-for(let i = 0; i <= 2; i++)
+for(let i = 0; i <= 9; i++)
 {
     carouselInner += `<div class="carousel-item ${i === 0 ? 'active' : ''}">
                         <img src="images/slider/${i}.jpg" class="d-block w-100" alt="Imagem ${i+1}"></img>

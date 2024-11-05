@@ -82,7 +82,7 @@ function generateMainHero()
 {
     var images = []; 
 
-    for(let i = 0; i <= 5; i++)
+    for(let i = 0; i <= 6; i++)
         images.push(`images/hero/main/${i}.jpg`)
 
     var title = "Betel Brasileiro Funcionários II";
@@ -98,7 +98,7 @@ function generateAlternativeHero()
 {
     var images = []; 
 
-    for(let i = 0; i <= 5; i++)
+    for(let i = 0; i <= 6; i++)
         images.push(`images/hero/alternative/${i}.jpg`)
 
     var title = "Avanço Missionário 2024";

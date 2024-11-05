@@ -1,0 +1,22 @@
+#worship-schedule
+{
+    background: rgb(0, 0, 0) !important;
+    color: rgb(0, 0, 0) !important;
+    padding-top: 70px !important;
+    padding-bottom: 70px !important;
+}
+
+#worship-schedule h2
+{
+    color: rgb(255, 255, 255) !important;
+}
+
+.schedule-item
+{
+    background-color: rgb(255, 255, 255);
+}
+
+.schedule-item:hover
+{
+    background-color: #FCAC21;
+}
