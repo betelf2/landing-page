@@ -9,10 +9,10 @@
   
   <title>Betel Funcionários II</title>
 
-  <!-- Bootstrap CSS -->
-  <link href="styles/bootstrap.css" rel="stylesheet">
+  <link href="styles/bootstrap.css" rel="stylesheet">   <!-- Bootstrap CSS -->
   <link href="styles/index.css" rel="stylesheet">
   <link href="styles/index-hero.css" rel="stylesheet"> <!-- Carrega hero na página -->
+  <link href="styles/carousel.css" rel="stylesheet">
 
   <!-- Dependências do JavaScript (Bootstrap, jQuery, Popper.js) -->
   <script src="scripts/utils/load-external-libraries.js"></script>
@@ -26,6 +26,10 @@
   <!-- Hero -->
   <div id="index-hero"></div>
   <script src="scripts/index-hero.js"></script>  <!-- Importa o script do hero -->
+
+  <!-- Carrossel -->
+  <div id="carousel"></div>
+  <script src="scripts/carousel.js"></script>
 
   <!-- Departamentos -->
   <section id="departamentos" class="py-5">
@@ -87,9 +91,6 @@
   </section>
   <script src="scripts/load-ministerios.js" type="module"></script> <!-- Importa o script dos ministérios -->
   <!-- Ministérios -->
-
-  <!-- Carrossel em Iframe -->
-  <iframe src="carrossel.html"  id="galeria" style="border:0; width:100%; height:620px;" loading="lazy"></iframe>
 
   <!-- Seção de Localização -->
   <section id="localizacao" class="py-5">

@@ -16,12 +16,6 @@ const navb_historiaDaIgreja =
 `<!-- História da Igreja -->
 <li class="nav-item"> <a class="nav-link" href="#historia">História da Igreja</a> </li>`
 
-const navb_galeriaDeFotos = 
-`
-<!-- Galeria de Fotos -->
-<li class="nav-item"> <a class="nav-link" href="#galeria">Galeria de Fotos</a> </li>
-`
-
 const navb_localizacao = 
 `
 <!-- Localização -->
@@ -115,7 +109,6 @@ async function createNavigationBar()
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ml-auto">
                         ${navb_historiaDaIgreja}
-                        ${navb_galeriaDeFotos}
                         ${navb_ministerios}
                         ${navb_departamentos}
                         ${navb_localizacao}
