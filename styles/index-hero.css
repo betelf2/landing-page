@@ -1,0 +1,73 @@
+.hero {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    color: white;
+    background-color: #000; /* Cor de fundo caso a imagem não carregue */
+}
+
+.hero-img-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0; /* Fica atrás do texto */
+    overflow: hidden;
+}
+
+.hero-bg-image {
+    position: absolute;
+    width: 100%;
+    height: 105%; /* Aumenta um pouco para um melhor efeito de parallax */
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 3.5s ease-in-out;
+}
+
+.hero-bg-image.hero-img-active {
+    opacity: 1;
+}
+
+.hero::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7); /* Adiciona um overlay escuro */
+    z-index: 1; /* Coloca o overlay acima da imagem */
+}
+
+.hero-dark-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0; /* Inicialmente invisível */
+    transition: opacity 0.08s ease-in-out;
+    z-index: 1; /* Fica acima da imagem */
+}
+
+.hero .container {
+    position: relative; /* Necessário para que o conteúdo fique acima do overlay */
+    z-index: 2; /* Garante que o texto fique acima do overlay */
+}
+
+.btn-hero {
+    background-color: transparent;
+    color: white;
+    border: 1px #ffffff !important;
+    border-radius: 2px;;
+    padding: 10px 20px;
+    border-radius: 1px;
+    border-style: solid !important;
+}
+
+.btn-hero:hover {
+    background-color: #ffffff25;
+    color: white;
+}

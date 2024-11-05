@@ -8,35 +8,24 @@
   <link rel="icon" type="image/png" href="images/icones/icone-betel.png">
   
   <title>Landing Page Template</title>
+  
   <!-- Bootstrap CSS -->
   <link href="styles/bootstrap.css" rel="stylesheet">
   <link href="styles/index.css" rel="stylesheet">
+  <link href="styles/index-hero.css" rel="stylesheet"> <!-- Carrega hero na página -->
 
   <!-- Dependências do JavaScript (Bootstrap, jQuery, Popper.js) -->
   <script src="scripts/utils/load-external-libraries.js"></script>
 </head>
-
-<script>
-  window.addEventListener('scroll', function() {
-    const scrolled = window.scrollY;
-    const hero = document.querySelector('.hero');
-    hero.style.backgroundPositionY = `${scrolled * 0.5}px`; // Ajusta a velocidade do movimento
-  });
-</script>
 
 <body>
   <!-- Navigation Bar -->
   <div id="navigation-bar"></div>
   <script src="./scripts/navigation-bar.js" type="module"></script> <!-- Importa o script da navigation bar -->
 
-  <!-- Hero Section -->
-  <header class="hero d-flex align-items-center" id="home">
-    <div class="container text-center">
-      <h1>Betel Brasileiro Funcionários II</h1>
-      <p class="lead">Maneja bem a palavra da verdade</p>
-      <a href="#localizacao" class="btn btn-hero mt-4">Venha nos visitar</a>
-    </div>
-  </header>
+  <!-- Hero -->
+  <div id="index-hero"></div>
+  <script src="scripts/index-hero.js"></script>  <!-- Importa o script do hero -->
 
   <!-- Departamentos -->
   <section id="departamentos" class="py-5">
