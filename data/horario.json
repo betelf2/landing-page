@@ -2,31 +2,31 @@
     {
         "dia": "Segunda-feira",
         "tipo": "Oração dos Senhores",
-        "horario": "19:30 - 21:30"
+        "horario": "19:30 - 21:00"
     },
     {
         "dia": "Terça-feira",
         "tipo": "Culto de Oração",
-        "horario": "19:30 - 21:30"
+        "horario": "19:30 - 21:00"
     },
     {
         "dia": "Quarta-feira",
         "tipo": "Círculo de Oração",
-        "horario": "15:00 - 17:00"
+        "horario": "15:00 - 16:30"
     },
     {
         "dia": "Quinta-feira",
         "tipo": "ECB: Adolescentes, Jovens e Adultos",
-        "horario": "19:30 - 21:30"
+        "horario": "19:30 - 21:00"
     },
     {
         "dia": "Quinta-feira",
         "tipo": "ECB: Adolescentes, Jovens e Adultos",
-        "horario": "19:30 - 21:30"
+        "horario": "19:30 - 21:00"
     },
     {
         "dia": "Domingo",
         "tipo": "Culto Noturno",
-        "horario": "18:30 - 20:30"
+        "horario": "18:30 - 20:00"
     }   
 ]
