@@ -89,6 +89,17 @@
     border: 0px;
     outline: 2px solid var(--laranja-betel-dark2) !important;;
 }
+
+/* ----- Corrigindo Scroll ao clicar pela barra de navegação ----- */
+#localizacao 
+{
+    scroll-margin-top: 80px; /* Ajuste para o tamanho do cabeçalho */
+}
+
+#avisos
+{
+    scroll-margin-top: 80px;
+}
 /* ---------------- Contato ----------------*/
 
 /* CSS filter generator to convert from black to target hex color: https://codepen.io/sosuke/pen/Pjoqqp */
