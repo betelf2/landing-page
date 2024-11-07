@@ -1,3 +1,12 @@
+export function createCarouselHtml(items)
+{
+    var carouselHead = createCarouselHead();
+    var carouselIndicators = createCarouselIndicators(items);
+    var carouselInner = createCarouselInner(items);
+    var carouselTail = createCarouselTail();
+    return carouselHead + carouselIndicators + carouselInner + carouselTail;
+}
+
 function createCarouselHead()
 {
     return `<section id="carouselSection" class="py-5 bg-light">
@@ -45,24 +54,3 @@ function createCarouselTail()
             </div><!-- container -->
         </section>`
 }
-
-function createCarouselHtml(items)
-{
-    var carouselHead = createCarouselHead();
-    var carouselIndicators = createCarouselIndicators(items);
-    var carouselInner = createCarouselInner(items);
-    var carouselTail = createCarouselTail();
-    return carouselHead + carouselIndicators + carouselInner + carouselTail;
-}
-
-// Fazendo items do carrossel
-var quantityOfItems = 10;
-var items = []
-for(let i = 0; i < quantityOfItems; i++)
-{
-    items.push(`<img src="images/slider/${i}.jpg" class="d-block w-100" alt="Imagem ${i+1}"></img>`)
-}
-
-// Adicionando no index.html
-let carouselContainer = document.getElementById("carousel");
-carouselContainer.innerHTML += createCarouselHtml(items);
