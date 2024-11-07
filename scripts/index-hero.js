@@ -1,96 +1,16 @@
-import { getValidImgPaths } from './utils/image-reader.js'
-
-// Efeito parallax ao rolar pela tela
-function parallaxEffect(images, factor)
-{
-    window.addEventListener('scroll', () => {
-        const scrollTop = window.scrollY;
-        images.forEach(image => {
-        image.style.transform = `translateY(${scrollTop * factor}px)`;
-        });
-    });
-}
-
-// Apresenta fotos semelhante ao formato gif
-function gifEffect(images, transitionTime)
-{
-    let currentIndex = 0;
-
-    setInterval(() => {
-        images[currentIndex].classList.remove('hero-img-active');
-        currentIndex = (currentIndex + 1) % images.length;
-        images[currentIndex].classList.add('hero-img-active');
-    }, transitionTime); // Troca a imagem a cada x segundos
-}
-
-// Escurece imagem ao rolar pela tela
-function darkOverlayEffect()
-{
-    const darkOverlay = document.querySelector('.hero-dark-overlay');
-
-    // Efeito de escurecimento com rolagem
-    window.addEventListener('scroll', () => {
-        const scrollTop = window.pageYOffset;
-        const maxScroll = window.innerHeight; // Ajuste o valor máximo de rolagem
-        const opacity = Math.min(scrollTop / maxScroll, 1); // Limita a opacidade de 0 a 1
-        darkOverlay.style.opacity = opacity;
-    });
-}
-
-// Gera hero com os dados passados
-function generateHeroContainer(title, description, buttonText, buttonHref)
-{   
-    var data = `<header class="hero d-flex align-items-center">
-                    <div class="hero-img-overlay">
-                        <div id="hero-container-inner" class="nx0"></div>
-                        <div class="hero-dark-overlay"></div>
-                    </div> <!-- hero-img-overlay -->
-
-                    <div class="container text-center position-relative">
-                        <h1>${title}</h1>
-                        <p class="lead">${description}</p>
-                        <a href="${buttonHref}" class="btn btn-hero mt-4">${buttonText}</a>
-                    </div> <!-- container -->
-                </header>`
-
-    // aplica no html
-    var heroContainer = document.getElementById("index-hero");
-    heroContainer.innerHTML += data;
-}
-
-function addImagesToHero(images)
-{
-    var heroContainerInner = document.getElementById("hero-container-inner");
-
-    if(images)
-    {
-        // Adiciona array de imagens
-        images.forEach((image, index) => 
-        {
-            heroContainerInner.innerHTML += `<img src="${image}" 
-                                        alt="Imagem ${index}" 
-                                        class="hero-bg-image ${index === 0 ? 'hero-img-active' : ''}"
-                                    >`;
-        });    
-    } 
-
-    enableListeners();
-}
+import { parallaxEffect, gifEffect, darkOverlayEffect } from './utils/visual-effects.js'
 
 // Gera hero com os dados passados
 function generateHTML(images, title, description, buttonText, buttonHref)
-{   
+{
     var data = `<header class="hero d-flex align-items-center">
                     <div class="hero-img-overlay">`
 
-    if(images)
+    // Adiciona array de imagens
+    images.forEach((image, index) => 
     {
-        // Adiciona array de imagens
-        images.forEach((image, index) => 
-        {
-            data += `<img src="${image}" alt="Imagem ${index}" class="hero-bg-image ${index === 0 ? 'hero-img-active' : ''}">`;
-        });    
-    }  
+        data += `<img src="${image}" alt="Imagem ${index}" class="hero-bg-image ${index === 0 ? 'hero-img-active' : ''}">`;
+    });      
 
     data += `   <div class="hero-dark-overlay"></div>
                 </div> <!-- hero-img-overlay -->
@@ -111,39 +31,31 @@ function enableListeners()
 {
     document.addEventListener('DOMContentLoaded', function () 
     {
-        const images = document.querySelectorAll('.nx0 .hero-bg-image');
+        const images = document.querySelectorAll('.hero-img-overlay .hero-bg-image');
+        const darkOverlayElement = document.querySelector('.hero-dark-overlay');
         var parallaxFactor = 0.5;
         var gifTransitionTime = 5000;
 
-        console.log(images)
-
-        if(images && images.length > 0)
-        {
-            parallaxEffect(images, parallaxFactor);
-            gifEffect(images, gifTransitionTime);
-            darkOverlayEffect();
-        }
+        parallaxEffect(images, parallaxFactor);
+        gifEffect(images, gifTransitionTime, 'hero-img-active');
+        darkOverlayEffect(darkOverlayElement);
     }); 
 }
 
-async function generateMainHero()
+function generateMainHero()
 {
-    
-    //var images = await getValidImgPaths("images/hero/main")
+    var images = []; 
+
+    for(let i = 0; i <= 6; i++)
+        images.push(`images/hero/main/${i}.jpg`)
 
     var title = "Betel Brasileiro Funcionários II";
     var description = "Maneja bem a palavra da verdade";
     var buttonText = "Venha nos visitar";
     var buttonHref = "#localizacao";
 
-    generateHeroContainer(title, description, buttonText, buttonHref);
-    var images = await getValidImgPaths("images/hero/main");
-    addImagesToHero(images);
+    generateHTML(images, title, description, buttonText, buttonHref);
     enableListeners();
-
-
-    //generateHTML(images, title, description, buttonText, buttonHref);
-    //enableListeners();
 }
 
 function generateAlternativeHero()
@@ -162,12 +74,6 @@ function generateAlternativeHero()
     enableListeners();
 }
 
-async function generateHero()
-{
-    await generateMainHero()
-    //generateAlternativeHero()
-    await enableListeners()
-}
-
-generateHero()
+generateMainHero()
+//generateAlternativeHero()
 enableListeners()
