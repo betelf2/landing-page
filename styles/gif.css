@@ -1,0 +1,24 @@
+.gif-image 
+{
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    opacity: 0;
+    transition: opacity 3.5s ease-in-out !important;
+}
+
+.gif-image-enabled 
+{
+    opacity: 1 !important;
+    position: absolute; 
+    opacity: 1;
+}
+
+/* TODO: APLICAR EM TODOS OS CASOS */
+.carousel-item-gif-0
+{
+    position: relative !important;
+}

@@ -1,17 +1,19 @@
-export function createCarouselHtml(items)
+export function createCarouselHtml(items, enableAutoplay=true)
 {
-    var carouselHead = createCarouselHead();
+    var carouselHead = createCarouselHead(enableAutoplay);
     var carouselIndicators = createCarouselIndicators(items);
     var carouselInner = createCarouselInner(items);
     var carouselTail = createCarouselTail();
     return carouselHead + carouselIndicators + carouselInner + carouselTail;
 }
 
-function createCarouselHead()
+function createCarouselHead(enableAutoplay)
 {
+    var autoplayTag = (enableAutoplay === true) ? `data-ride="carousel"` : `data-bs-ride="carousel" data-bs-interval="false"`;
+
     return `<section id="carouselSection" class="py-5 bg-light">
                 <div class="container">
-                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">`
+                    <div id="carouselExampleIndicators" class="carousel slide" ${autoplayTag}>`
 }
 
 function createCarouselIndicators(items)

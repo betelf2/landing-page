@@ -1,26 +1,5 @@
 import { getDataFromCurrentURL } from "./utils/url-handler.js";
-
-export const DEPARTAMENTOS =
-{ 
-    INFANTIL: 'DEIBB'.toUpperCase(), 
-    ADOLESCENTES: 'TEENS'.toUpperCase(), 
-    JOVENS: 'ELO'.toUpperCase(), 
-    HOMENS: 'DEHOBB'.toUpperCase(), 
-    MULHERES: 'DEMUBB'.toUpperCase()
-};
-
-export const MINISTERIOS =
-{ 
-    MISSOES: 'MISSOES'.toUpperCase(), 
-    SOCIAL: 'SOCIAL'.toUpperCase(), 
-    INFANTIL: 'INFANTIL'.toUpperCase(), 
-    LOUVOR: 'LOUVOR'.toUpperCase(), 
-    DANCA: 'DANCA'.toUpperCase(), 
-    TEATRO: 'TEATRO'.toUpperCase(), 
-    COMUNICACAO: 'COMUNICACAO'.toUpperCase(), 
-    INTERCESSAO: 'INTERCESSAO'.toUpperCase(), 
-    CASAIS: 'CASAIS'.toUpperCase()
-};
+import { DEPARTAMENTOS, MINISTERIOS } from "./constants.js";
 
 const IMAGE_ROOT = "/images/projetos"
 
@@ -30,6 +9,13 @@ const projetos = [
         descricao: "Evangelização Infantil", 
         imagem: `${IMAGE_ROOT}/seara.jpg`, 
         ministerios: [MINISTERIOS.INFANTIL, MINISTERIOS.MISSOES] ,
+        departamentos: [DEPARTAMENTOS.INFANTIL]
+    },
+    { 
+        titulo: "EBF: (Escola Bíblica de Férias)", 
+        descricao: "Evangelização Infantil", 
+        imagem: `${IMAGE_ROOT}/seara.jpg`, 
+        ministerios: [MINISTERIOS.INFANTIL] ,
         departamentos: [DEPARTAMENTOS.INFANTIL]
     },
     { 
