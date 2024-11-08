@@ -1,0 +1,22 @@
+[
+    {
+        "titulo": "De Dentro Pra Fora (Julia Vitoria)",
+        "descricao": "Apresentação para o Avanço Missionário de 2023",
+        "imagens": 
+        [
+            "images/ministerios/danca/a0.jpg",
+            "images/ministerios/danca/a1.jpg",
+            "images/ministerios/danca/a2.jpg"
+        ]
+    },
+    {
+        "titulo": "Sacrifício (Fred Arrais)",
+        "descricao": "Apresentação para o Avanço Missionário de 2024",
+        "imagens": 
+        [
+            "images/ministerios/danca/b0.jpg",
+            "images/ministerios/danca/b1.jpg",
+            "images/ministerios/danca/b2.jpg"
+        ]
+    }
+]

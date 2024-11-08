@@ -18,7 +18,7 @@ for(let i = 0; i < quantityOfItems; i++)
                     <img src="images/slider/${2}.jpg" class="d-block w-100 gif-image" alt="Imagem ${i+1}"></img>
                     <img src="images/slider/${3}.jpg" class="d-block w-100 gif-image" alt="Imagem ${i+1}"></img>
                 </div>
-                <div class="carousel-caption d-none d-md-block">
+                <div class="carousel-caption">
                     <h5>Projeto ${i}</h5>
                     <p>Descrição do projeto ${i}.</p>
                 </div>`
