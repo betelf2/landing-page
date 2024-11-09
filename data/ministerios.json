@@ -2,28 +2,28 @@
     { 
         "titulo": "Missões", 
         "descricao": "Levando a palavra de Deus aos quatro cantos do mundo, nosso ministério de missões atua em diversas frentes.", 
-        "imagem": "images/missoes.jpg", 
+        "imagem": "images/ministerios/missoes/capa.jpg", 
         "link": "missoes",
         "hrefKey": "MISSOES"
     },
     { 
         "titulo": "Social", 
         "descricao": "Com ações voltadas para a comunidade, o ministério social trabalha para transformar vidas.", 
-        "imagem": "images/social.jpg", 
+        "imagem": "images/ministerios/social/capa.jpg", 
         "link": "social",
         "hrefKey": "SOCIAL"
     },
     { 
         "titulo": "Infantil", 
         "descricao": "Nosso ministério infantil oferece um ambiente seguro e acolhedor para as crianças aprenderem sobre Deus.", 
-        "imagem": "images/infantil.jpg", 
+        "imagem": "images/ministerios/infantil/capa.jpg", 
         "link": "infantil",
         "hrefKey": "INFANTIL"
     },
     { 
         "titulo": "Aviva-nos (Louvor)", 
         "descricao": "Nosso ministério de louvor busca guiar a congregação em adoração a Deus.", 
-        "imagem": "images/louvor.jpg", 
+        "imagem": "images/ministerios/louvor/capa.jpg", 
         "link": "louvor",
         "hrefKey": "LOUVOR"
     },
@@ -37,28 +37,28 @@
     { 
         "titulo": "Teatro", 
         "descricao": "Usamos o teatro para transmitir mensagens impactantes e inspirar a comunidade.", 
-        "imagem": "images/teatro.jpg", 
+        "imagem": "images/ministerios/teatro/capa.jpg", 
         "link": "teatro",
         "hrefKey": "TEATRO"
     },
     { 
         "titulo": "Comunicação", 
         "descricao": "Usamos o teatro para transmitir mensagens impactantes e inspirar a comunidade.", 
-        "imagem": "images/comunicacao.jpg", 
+        "imagem": "images/ministerios/comunicacao/capa.jpg", 
         "link": "comunicacao",
         "hrefKey": "COMUNICACAO"
     },
     { 
         "titulo": "Intercessão", 
         "descricao": "Intercedemos.", 
-        "imagem": "images/intercessao.jpg", 
+        "imagem": "images/ministerios/intercessao/capa.jpg", 
         "link": "intercessao",
         "hrefKey": "INTERCESSAO"
     },
     { 
         "titulo": "Casais", 
         "descricao": "Somos casados.", 
-        "imagem": "images/casais.jpg", 
+        "imagem": "images/ministerios/casais/capa.jpg", 
         "link": "casais",
         "hrefKey": "CASAIS"
     }

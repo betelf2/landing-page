@@ -1,9 +1,32 @@
 import { createCarouselHtml } from "./carousel-creator.js";
 import { gifEffect } from './visual-effects.js'
-import { loadJsonData } from './json-reader.js'
 
 const carouselItemClass = "carousel-item-gif";
 const gifTransitionTime = 7000;
+
+/** 
+ * Array of elements of in format:
+ * [
+ *      "titulo": string,
+ *      "descricao": "string,
+ *      "imagens": Array of strings with image paths to create gif
+ * ]
+*/
+export async function createGifCarousel(array_of_elements)
+{
+    // Fazendo os itens do carrossel
+    let carouselContainer = document.getElementById("carousel-of-gifs");
+    let carouselInnerItems = await createGifCarouselElements(array_of_elements);
+    carouselContainer.innerHTML += `<link href="styles/gif.css" rel="stylesheet">`
+    carouselContainer.innerHTML += createCarouselHtml(carouselInnerItems, false);
+
+    // Colocando Gifs no carrossel
+    for(let i = 0; i < carouselInnerItems.length; i++)
+    {
+        var images = document.querySelectorAll(`.${carouselItemClass}-${i} .gif-image`);
+        gifEffect(images, gifTransitionTime, 'gif-image-enabled');
+    }
+}
 
 function createGifItem(images)
 {
@@ -33,31 +56,17 @@ function createCarouselItem(title, description, gifItem, index)
             </div>`
 }
 
-async function createGifCarouselElementsUsingFile(address)
+async function createGifCarouselElements(items)
 {
-    var fileData = await loadJsonData(address);
-    fileData.reverse(); // datas mais recentes aparecem primeiro
-    var carouselItems = []
+    var carouselItems = [];
 
-    if(fileData)
+    if(items)
     {
-        fileData.forEach((element, index) => { 
-            var gifHtml = createGifItem(element.imagens)
-            carouselItems.push(createCarouselItem(element.titulo, element.descricao, gifHtml, index))
+        items.forEach((item, index) => { 
+            var gifHtml = createGifItem(item.imagens);
+            carouselItems.push(createCarouselItem(item.titulo, item.descricao, gifHtml, index));
         });    
     }
 
     return carouselItems;
-}
-
-// Fazendo os itens do carrossel
-let carouselContainer = document.getElementById("carousel-of-gifs");
-let carouselInnerItems = await createGifCarouselElementsUsingFile("./data/ministerios/danca.json")
-carouselContainer.innerHTML += `<link href="styles/gif.css" rel="stylesheet">`
-carouselContainer.innerHTML += createCarouselHtml(carouselInnerItems, false);
-
-for(let i = 0; i < carouselInnerItems.length; i++)
-{
-    var images = document.querySelectorAll(`.${carouselItemClass}-${i} .gif-image`);
-    gifEffect(images, gifTransitionTime, 'gif-image-enabled');
 }
