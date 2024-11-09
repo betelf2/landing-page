@@ -2,35 +2,35 @@
     { 
         "titulo": "DEIBB", 
         "descricao": "Departamento Infantil", 
-        "imagem": "images/1080x1920.png", 
+        "imagem": "images/departamentos/deibb/capa.jpg", 
         "link": "deibb",
         "hrefKey": "DEIBB"
     },
     { 
         "titulo": "Conexão Teen", 
         "descricao": "Departamento dos Adolescentes", 
-        "imagem": "images/social.jpg", 
+        "imagem": "images/departamentos/teens/capa.jpg", 
         "link": "teens",
         "hrefKey": "TEENS"
     },
     { 
         "titulo": "ELO", 
         "descricao": "Departamento dos Jovens", 
-        "imagem": "images/infantil.jpg", 
+        "imagem": "images/departamentos/elo/capa.jpg", 
         "link": "elo",
         "hrefKey": "ELO"
     },
     { 
         "titulo": "DEHOBB", 
         "descricao": "Departamento dos Homens", 
-        "imagem": "images/louvor.jpg", 
+        "imagem": "images/departamentos/dehobb/capa.jpg", 
         "link": "dehobb",
         "hrefKey": "DEHOBB"
     },
     { 
         "titulo": "DEMUBB", 
         "descricao": "Departamento das Mulheres", 
-        "imagem": "images/danca.jpg", 
+        "imagem": "images/departamentos/demubb/capa.jpg", 
         "link": "demubb",
         "hrefKey": "DEMUBB"
     }
