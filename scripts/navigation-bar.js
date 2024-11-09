@@ -14,30 +14,30 @@ const navb_toggler = `
 
 const navb_historiaDaIgreja = 
 `<!-- História da Igreja -->
-<li class="nav-item"> <a class="nav-link" href="#historia">História da Igreja</a> </li>`
+<li class="nav-item"> <a class="nav-link" href="index.html#historia">História da Igreja</a> </li>`
 
 const navb_localizacao = 
 `
 <!-- Localização -->
-<li class="nav-item"> <a class="nav-link" href="#localizacao">Localização</a> </li>
+<li class="nav-item"> <a class="nav-link" href="index.html#localizacao">Localização</a> </li>
 `
 
 const navb_horario = 
 `
 <!-- Horário -->
-<li class="nav-item"> <a class="nav-link" href="#horario">Horário dos Cultos</a> </li>
+<li class="nav-item"> <a class="nav-link" href="index.html#horario">Horário dos Cultos</a> </li>
 `
 
 const navb_avisos = 
 `
 <!-- Horário -->
-<li class="nav-item"> <a class="nav-link" href="#avisos">Avisos</a> </li>
+<li class="nav-item"> <a class="nav-link" href="index.html#avisos">Avisos</a> </li>
 `
 
 const navb_contato = 
 `
 <!-- Horário -->
-<li class="nav-item"> <a class="nav-link" href="#contatos">Contato</a> </li>
+<li class="nav-item"> <a class="nav-link" href="index.html#contatos">Contato</a> </li>
 `
 
 const navigationBarStyle =
