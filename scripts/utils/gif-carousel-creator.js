@@ -3,7 +3,7 @@ import { gifEffect } from './visual-effects.js'
 import { loadJsonData } from './json-reader.js'
 
 const carouselItemClass = "carousel-item-gif";
-const gifTransitionTime = 5000;
+const gifTransitionTime = 7000;
 
 function createGifItem(images)
 {
@@ -36,6 +36,7 @@ function createCarouselItem(title, description, gifItem, index)
 async function createGifCarouselElementsUsingFile(address)
 {
     var fileData = await loadJsonData(address);
+    fileData.reverse(); // datas mais recentes aparecem primeiro
     var carouselItems = []
 
     if(fileData)

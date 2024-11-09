@@ -9,7 +9,7 @@ export function createCarouselHtml(items, enableAutoplay=true)
 
 function createCarouselHead(enableAutoplay)
 {
-    var autoplayTag = (enableAutoplay === true) ? `data-ride="carousel"` : `data-bs-ride="false" data-bs-interval="false"`;
+    var autoplayTag = (enableAutoplay === true) ? `data-ride="carousel"` : `data-interval="false"`;
 
     return `<section id="carouselSection" class="py-5 bg-light">
                 <div class="container">

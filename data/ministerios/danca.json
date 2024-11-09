@@ -18,5 +18,15 @@
             "images/ministerios/danca/b1.jpg",
             "images/ministerios/danca/b2.jpg"
         ]
+    },
+    {
+        "titulo": "Tu és + Águas Purificadoras (Fhop Music)",
+        "descricao": "Apresentação para o EMADE 2024",
+        "imagens": 
+        [
+            "images/ministerios/danca/c0.jpg",
+            "images/ministerios/danca/c1.jpg",
+            "images/ministerios/danca/c2.jpg"
+        ]
     }
 ]
