@@ -10,6 +10,35 @@
         ]
     },
     {
+        "titulo": "Até Que Ele Venha (Alexandre Magnani)"        ,
+        "descricao": "Apresentação para o Culto de Missões (Julho de 2023)",
+        "imagens": 
+        [
+            "images/ministerios/danca/f0.jpg",
+            "images/ministerios/danca/f1.jpg",
+            "images/ministerios/danca/f2.jpg"
+        ]
+    },
+    {
+        "titulo": "O retorno do Rei (Anderson Freire)",
+        "descricao": "Apresentação para o aniversário de 39 anos da igreja",
+        "imagens": 
+        [
+            "images/ministerios/danca/d0.jpg",
+            "images/ministerios/danca/d1.jpg",
+            "images/ministerios/danca/d2.jpg"
+        ]
+    },
+    {
+        "titulo": "Novo céu e nova terra (Vocal Livre)",
+        "descricao": "Apresentação para o aniversário de 39 anos da igreja",
+        "imagens": 
+        [
+            "images/ministerios/danca/e0.jpg",
+            "images/ministerios/danca/e1.jpg"
+        ]
+    },
+    {
         "titulo": "Sacrifício (Fred Arrais)",
         "descricao": "Apresentação para o Avanço Missionário de 2024",
         "imagens": 
@@ -17,6 +46,16 @@
             "images/ministerios/danca/b0.jpg",
             "images/ministerios/danca/b1.jpg",
             "images/ministerios/danca/b2.jpg"
+        ]
+    },
+    {
+        "titulo": "Tua Alegria (Isadora Pompeo)",
+        "descricao": "Apresentação para o CelebraTeen 2024",
+        "imagens": 
+        [
+            "images/ministerios/danca/g0.jpg",
+            "images/ministerios/danca/g1.jpg",
+            "images/ministerios/danca/g2.jpg"
         ]
     },
     {

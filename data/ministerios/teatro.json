@@ -1,0 +1,61 @@
+[
+    {
+        "titulo": "Getsêmani (Leonardo Gonçalves)",
+        "descricao": "Apresentação para o aniversário de 39 anos da igreja",
+        "imagens": 
+        [
+            "images/ministerios/teatro/a0.jpg",
+            "images/ministerios/teatro/a1.jpg",
+            "images/ministerios/teatro/a2.jpg"
+        ]
+    },
+    {
+        "titulo": "Bendito Seja Sempre O Cordeiro (Josimar Bianchi)",
+        "descricao": "Apresentação para o aniversário de 39 anos da igreja",
+        "imagens": 
+        [
+            "images/ministerios/teatro/b0.jpg",
+            "images/ministerios/teatro/b1.jpg"
+        ]
+    },
+    {
+        "titulo": "Quebrantado (Vineyard)",
+        "descricao": "Pantomima para o aniversário de 39 anos da igreja",
+        "imagens": 
+        [
+            "images/ministerios/teatro/c0.jpg",
+            "images/ministerios/teatro/c1.jpg",
+            "images/ministerios/teatro/c2.jpg"
+        ]
+    },
+    {
+        "titulo": "Vai Valer a Pena (Livres Para Adorar)",
+        "descricao": "Apresentação para o Avanço Missionário de 2024",
+        "imagens": 
+        [
+            "images/ministerios/teatro/e0.jpg",
+            "images/ministerios/teatro/e1.jpg",
+            "images/ministerios/teatro/e2.jpg"
+        ]
+    },
+    {
+        "titulo": "Coração Valente (Anderson Freire)",
+        "descricao": "Apresentação para o Avanço Missionário de 2024",
+        "imagens": 
+        [
+            "images/ministerios/teatro/d0.jpg",
+            "images/ministerios/teatro/d1.jpg",
+            "images/ministerios/teatro/d2.jpg"
+        ]
+    },
+    {
+        "titulo": "CelebraTeen 2024",
+        "descricao": "Apresentação para o CelebraTeen 2024",
+        "imagens": 
+        [
+            "images/ministerios/teatro/f0.jpg",
+            "images/ministerios/teatro/f1.jpg",
+            "images/ministerios/teatro/f2.jpg"
+        ]
+    }
+]
