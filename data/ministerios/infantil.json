@@ -1,0 +1,85 @@
+[
+    {
+        "titulo": "Dia das Crianças (2022)",
+        "descricao": "Evangelização Infantil na Praça Bela",
+        "imagens": 
+        [
+            "images/ministerios/infantil/g0.jpg",
+            "images/ministerios/infantil/g1.jpg",
+            "images/ministerios/infantil/g2.jpg",
+            "images/ministerios/infantil/g3.jpg",
+            "images/ministerios/infantil/g4.jpg"
+        ]
+    },
+    {
+        "titulo": "Seara dos Pequeninos (2022)",
+        "descricao": "Evangelização Infantil em Campo Verde",
+        "imagens": 
+        [
+            "images/ministerios/infantil/a0.jpg",
+            "images/ministerios/infantil/a1.jpg",
+            "images/ministerios/infantil/a2.jpg"
+        ]
+    },
+    {
+        "titulo": "EBF (2023)",
+        "descricao": "Escola Bíblica de Férias",
+        "imagens": 
+        [
+            "images/ministerios/infantil/f0.jpg",
+            "images/ministerios/infantil/f1.jpg",
+            "images/ministerios/infantil/f2.jpg",
+            "images/ministerios/infantil/f3.jpg",
+            "images/ministerios/infantil/f4.jpg",
+            "images/ministerios/infantil/f5.jpg"
+        ]
+    },
+    {
+        "titulo": "Dia das Crianças (2023)",
+        "descricao": "Evangelização Infantil na Praça Bela",
+        "imagens": 
+        [
+            "images/ministerios/infantil/e0.jpg",
+            "images/ministerios/infantil/e1.jpg",
+            "images/ministerios/infantil/e2.jpg",
+            "images/ministerios/infantil/e3.jpg"
+        ]
+    },
+    {
+        "titulo": "Seara dos Pequeninos (2023)",
+        "descricao": "Evangelização Infantil em Campo Verde",
+        "imagens": 
+        [
+            "images/ministerios/infantil/b0.jpg",
+            "images/ministerios/infantil/b1.jpg",
+            "images/ministerios/infantil/b2.jpg"
+        ]
+    },
+    {
+        "titulo": "EBF (2024)",
+        "descricao": "Escola Bíblica de Férias",
+        "imagens": 
+        [
+            "images/ministerios/infantil/c0.jpg",
+            "images/ministerios/infantil/c1.jpg",
+            "images/ministerios/infantil/c2.jpg",
+            "images/ministerios/infantil/c3.jpg",
+            "images/ministerios/infantil/c4.jpg",
+            "images/ministerios/infantil/c5.jpg",
+            "images/ministerios/infantil/c6.jpg",
+            "images/ministerios/infantil/c7.jpg"
+        ]
+    },
+    {
+        "titulo": "Dia das Crianças (2024)",
+        "descricao": "Evangelização Infantil na Praça Bela",
+        "imagens": 
+        [
+            "images/ministerios/infantil/d0.jpg",
+            "images/ministerios/infantil/d1.jpg",
+            "images/ministerios/infantil/d2.jpg",
+            "images/ministerios/infantil/d3.jpg",
+            "images/ministerios/infantil/d4.jpg"
+        ]
+    }
+]
